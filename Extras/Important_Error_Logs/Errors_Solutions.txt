@@ -1,0 +1,45 @@
+(venv_0754_FCC_MLOPS_MLProd_Projects_311_01) luis@Luiss-MacBook-Pro venv_0754_FCC_MLOPS_MLProd_Projects_311_01 % python run_pipeline.py 
+Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+NumExpr defaulting to 8 threads.
+Initiating a new run for the pipeline: train_pipeline.
+The BaseParameters class to define step parameters is deprecated. Check out our docs https://docs.zenml.io/user-guide/advanced-guide/pipelining-features/configure-steps-pipelines for information on how to parameterize your steps. As a quick fix to get rid of this warning, make sure your parameter class inherits from pydantic.BaseModel instead of the BaseParameters class.
+Reusing registered pipeline version: (version: 23).
+Executing a new run.
+Caching is disabled by default for train_pipeline.
+Using user: default
+Using stack: mlflow_stack_customer
+  experiment_tracker: mlflow_tracker_customer
+  model_deployer: mlflow_customer
+  orchestrator: default
+  artifact_store: default
+Step ingest_df has started.
+Ingesting data from /Users/luis/Documents/Programming/Courses_Programming/0754 FCC MLOPS Course ML Prod Grade Projects/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/data/olist_customers_dataset_copy01.csv
+Step ingest_df has finished in 2.449s.
+Step clean_df has started.
+Data cleaning completed
+Failed to extract metadata for output artifact 'y_train': 'float' object has no attribute 'item'
+Failed to extract metadata for output artifact 'y_test': 'float' object has no attribute 'item'
+Step clean_df has finished in 1.393s.
+Step train_model has started.
+2024/03/07 16:45:48 WARNING mlflow.utils.autologging_utils: You are using an unsupported version of sklearn. If you encounter errors during autologging, try upgrading / downgrading sklearn to a supported version, or try upgrading MLflow.
+2024/03/07 16:45:48 WARNING mlflow.utils.autologging_utils: MLflow autologging encountered a warning: "/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/lib/python3.11/site-packages/mlflow/data/digest_utils.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead."
+2024/03/07 16:45:49 WARNING mlflow.utils.autologging_utils: MLflow autologging encountered a warning: "/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/lib/python3.11/site-packages/mlflow/types/utils.py:393: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details."
+2024/03/07 16:45:49 WARNING mlflow.utils.autologging_utils: MLflow autologging encountered a warning: "/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/lib/python3.11/site-packages/mlflow/types/utils.py:393: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details."
+2024/03/07 16:45:50 WARNING mlflow.utils.autologging_utils: MLflow autologging encountered a warning: "/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/lib/python3.11/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils."
+Model training completed
+Model Trained Successfully
+/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/lib/python3.11/site-packages/zenml/integrations/mlflow/experiment_trackers/mlflow_experiment_tracker.py:254: FutureWarning: ``mlflow.gluon.autolog`` is deprecated since 2.5.0. This method will be removed in a future release.
+  module.autolog(disable=True)
+Step train_model has finished in 2.833s.
+Step evaluate_model has started.
+Calculating MSE
+MSE: 1.864077053397548
+Calculating R2 Score
+R2 Score: 0.017729030402295565
+Calculating RMSE
+RMSE: 1.3653120717980736
+/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_311_01/lib/python3.11/site-packages/zenml/integrations/mlflow/experiment_trackers/mlflow_experiment_tracker.py:254: FutureWarning: ``mlflow.gluon.autolog`` is deprecated since 2.5.0. This method will be removed in a future release.
+  module.autolog(disable=True)
+Step evaluate_model has finished in 1.436s.
+Pipeline run has finished in 8.311s.
+You can visualize your pipeline runs in the ZenML Dashboard. In order to try it locally, please run zenml up.

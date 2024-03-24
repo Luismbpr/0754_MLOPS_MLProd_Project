@@ -1,0 +1,8 @@
+When using zenml up
+if not working
+
+Make sure this has been installed (on the virtual environment)
+$ zenml integration install mlflow -y
+
+zenml up
+default and no password

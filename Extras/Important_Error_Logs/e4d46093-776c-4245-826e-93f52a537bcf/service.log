@@ -1,0 +1,19 @@
+[1;35mLoading service daemon configuration from /Users/luis/Library/Application Support/zenml/local_stores/eabedc03-0de4-49c3-9a62-764e360eacd0/e4d46093-776c-4245-826e-93f52a537bcf/service.json[0m
+[1;35mStarting MLflow prediction service as blocking process... press CTRL+C once to stop it.[0m
+2024/03/14 22:50:11 INFO mlflow.pyfunc.backend: === Running command 'exec gunicorn --timeout=60 -b localhost:8000 -w 3 ${GUNICORN_CMD_ARGS} -- mlflow.pyfunc.scoring_server.wsgi:app'
+[2024-03-14 22:50:11 -0600] [43162] [INFO] Starting gunicorn 21.2.0
+[2024-03-14 22:50:11 -0600] [43162] [INFO] Listening at: http://127.0.0.1:8000 (43162)
+[2024-03-14 22:50:11 -0600] [43162] [INFO] Using worker: sync
+[2024-03-14 22:50:11 -0600] [43163] [INFO] Booting worker with pid: 43163
+[2024-03-14 22:50:11 -0600] [43164] [INFO] Booting worker with pid: 43164
+[2024-03-14 22:50:11 -0600] [43165] [INFO] Booting worker with pid: 43165
+Handling signal 15...
+Cleanup: terminating children processes...
+Terminating child process with PID 43162...
+[2024-03-14 22:50:13 -0600] [43162] [INFO] Handling signal: term
+[2024-03-14 22:50:13 -0600] [43163] [INFO] Worker exiting (pid: 43163)
+[2024-03-14 22:50:13 -0600] [43164] [INFO] Worker exiting (pid: 43164)
+[2024-03-14 22:50:13 -0600] [43165] [INFO] Worker exiting (pid: 43165)
+[2024-03-14 22:50:13 -0600] [43162] [INFO] Shutting down: Master
+Cleanup: removing PID file /Users/luis/Library/Application Support/zenml/local_stores/eabedc03-0de4-49c3-9a62-764e360eacd0/e4d46093-776c-4245-826e-93f52a537bcf/service.pid...
+Cleanup: terminating children processes...

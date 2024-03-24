@@ -1,0 +1,836 @@
+Showing logs for server: local
+[1;35mFetching logs from the 'local' local ZenML server...[0m
+[1;35mLoading service daemon configuration from /Users/luis/Library/Application 
+Support/zenml/zen_server/local/service.json[0m
+[1;35mInitializing the ZenML global configuration version to 0.55.5[0m
+[1;35mStarting ZenML Server as blocking process... press CTRL+C once to stop it.[0m
+INFO:     Started server process [25009]
+INFO:     Waiting for application startup.
+[1;35mNot writing the global configuration to disk in a ZenML server environment.[0m
+[1;35mNot writing the global configuration to disk in a ZenML server environment.[0m
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8237 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55604 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55605 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55606 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55607 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55608 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55609 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55610 - "POST /api/v1/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET /api/v1/workspaces/default?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET 
+/api/v1/stacks/aeff7473-997f-47a9-87fd-9d771f7543b6?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET /api/v1/current-user?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55613 - "GET /login?username=default HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55613 - "GET /css/2.5b37d44a.chunk.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55614 - "GET /css/main.77e46c35.chunk.css HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/base.py", line 109, in __call__
+    await response(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/responses.py", line 277, in __call__
+    await wrap(partial(self.listen_for_disconnect, receive))
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+    raise BaseExceptionGroup(
+exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/protocols/http/httptools_impl.py", line 412, in run_asgi
+    result = await app(  # type: ignore
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/middleware/proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/fastapi/applications.py", line 290, in __call__
+    await super().__call__(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/base.py", line 110, in __call__
+    response_sent.set()
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+    raise BaseExceptionGroup(
+exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/base.py", line 109, in __call__
+    await response(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/responses.py", line 277, in __call__
+    await wrap(partial(self.listen_for_disconnect, receive))
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+    raise BaseExceptionGroup(
+exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/protocols/http/httptools_impl.py", line 412, in run_asgi
+    result = await app(  # type: ignore
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/middleware/proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/fastapi/applications.py", line 290, in __call__
+    await super().__call__(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/base.py", line 110, in __call__
+    response_sent.set()
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+    raise BaseExceptionGroup(
+exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+INFO:     127.0.0.1:55616 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET /api/v1/workspaces/default?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/stacks/aeff7473-997f-47a9-87fd-9d771f7543b6?hydrate=True HTTP/1.1" 200 OK
+[31mTask exception was never retrieved
+future: <Task finished name='Task-68' coro=<RequestResponseCycle.run_asgi() done, defined at 
+/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-packa
+ges/uvicorn/protocols/http/httptools_impl.py:410> exception=ClientDisconnected()>[0m
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/base.py", line 109, in __call__
+    await response(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/responses.py", line 277, in __call__
+    await wrap(partial(self.listen_for_disconnect, receive))
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+    raise BaseExceptionGroup(
+exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/protocols/http/httptools_impl.py", line 412, in run_asgi
+    result = await app(  # type: ignore
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/middleware/proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/fastapi/applications.py", line 290, in __call__
+    await super().__call__(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/starlette/middleware/base.py", line 110, in __call__
+    response_sent.set()
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+    raise BaseExceptionGroup(
+exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    await self.send_500_response()
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/protocols/http/httptools_impl.py", line 449, in send_500_response
+    await self.send(response_start_event)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/uvicorn/protocols/http/httptools_impl.py", line 465, in send
+    raise ClientDisconnected
+uvicorn.protocols.utils.ClientDisconnected
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/components?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_works
+pace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&workspace_id=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&sta
+ck_id=cb7e0696-5d33-4d0e-bdf0-1f53e71d8851 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=orchestrator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=artifact_store HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=experiment_tracker HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=model_deployer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/code_repositories?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&sco
+pe_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/pipelines?hydrate=False&sort_by=desc%3Acreated&logical_operator=and&page=1&size=1&scope
+_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipeline&version_has
+h=d91c4001685d0985251a34e20a34dc8e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET /api/v1/current-user?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/pipeline_deployments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/api_token?pipeline_id=cbc2f846-778a-485f-9215-69625ec1a6d7&expires_minutes=1440 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Aingest_df%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/4c0018a1-63f5-4256-83a3-b1b6e76e37c6?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Aingest_df%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "PUT /api/v1/steps/f4bc18a2-37ce-4ccf-b02b-30875168ed41 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=X_trai
+n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/e0c2cd4d-b9da-4282-9a99-6c96411cc268?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=X_train&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=X_test
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/941d033c-ba80-42e7-b50f-0450ab5a0b95?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=X_test&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=y_trai
+n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/1ab8a2e3-82d4-465b-ba67-1ef671d09529?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=y_train&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=y_test
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/817344a0-1538-4ab1-b53c-6822337da68d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=y_test&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "PUT /api/v1/steps/bd2e76be-ac27-4264-a897-2e6420b19be2 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Atrain_model%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/432441b9-cb98-47e8-8233-e32c4ea0599b?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Atrain_model%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "PUT /api/v1/steps/b7ce7fd8-5980-48e8-9279-04f283630f36 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=r2_sco
+re HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/fa922bde-7230-4e63-bc25-6105d91eab6d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=r2_score&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=rmse 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/84c8b283-bcc1-4524-ba8f-db4c2dbc2253?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=rmse&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "PUT /api/v1/steps/cf525603-c5c7-41af-a463-bdc5b4ea7548 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Adeployment_trigger%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifacts/a094058a-17d3-4b68-b0fd-c3ade5ee2805?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Adeployment_trigger%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "PUT /api/v1/steps/ea1fe835-a443-4a0f-8e79-fded73c8ad2c HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:55619 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55619 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET /api/v1/workspaces/default?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/stacks/aeff7473-997f-47a9-87fd-9d771f7543b6?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/components?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_works
+pace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&workspace_id=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&sta
+ck_id=cb7e0696-5d33-4d0e-bdf0-1f53e71d8851 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=orchestrator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=artifact_store HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=experiment_tracker HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=model_deployer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Amlflow_model_deployer_step%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "GET 
+/api/v1/artifacts/014af239-21b5-4933-a5c7-bf39584cf134?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Amlflow_model_deployer_step%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "PUT /api/v1/steps/a5d5e75b-1aa1-4328-9311-048423c128e6 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:55643 - "GET /api/v1/current-user?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55643 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55650 - "GET 
+/workspaces/default/pipelines/cbc2f846-778a-485f-9215-69625ec1a6d7/runs/529be755-e4ff-4443-80ec
+-304a34e0f30f/dag HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55650 - "GET /media/logo_small.4204397d.svg HTTP/1.1" 304 Not Modified
+[1;35mGot token from cookie[0m
+[1;35mGot token from cookie[0m
+[31mAuthentication error: error decoding access token. You may need to rerun zenml connect.[0m
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/zenml/zen_server/jwt.py", line 79, in decode_token
+    claims_data = jwt.decode(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jwt.py", line 151, in decode_complete
+    decoded = api_jws.decode_complete(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jws.py", line 209, in decode_complete
+    self._verify_signature(signing_input, header, signature, key, algorithms)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jws.py", line 310, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/zenml/zen_server/auth.py", line 238, in authenticate_credentials
+    decoded_token = JWTToken.decode_token(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/zenml/zen_server/jwt.py", line 90, in decode_token
+    raise AuthorizationException(f"Invalid JWT token: {e}") from e
+zenml.exceptions.AuthorizationException: Invalid JWT token: Signature verification failed
+INFO:     127.0.0.1:55652 - "GET /api/v1/info HTTP/1.1" 200 OK
+[31mAuthentication error: error decoding access token. You may need to rerun zenml connect.[0m
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/zenml/zen_server/jwt.py", line 79, in decode_token
+    claims_data = jwt.decode(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jwt.py", line 151, in decode_complete
+    decoded = api_jws.decode_complete(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jws.py", line 209, in decode_complete
+    self._verify_signature(signing_input, header, signature, key, algorithms)
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/jwt/api_jws.py", line 310, in _verify_signature
+    raise InvalidSignatureError("Signature verification failed")
+jwt.exceptions.InvalidSignatureError: Signature verification failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/zenml/zen_server/auth.py", line 238, in authenticate_credentials
+    decoded_token = JWTToken.decode_token(
+  File 
+"/Users/luis/miniforge3/envs/venv_0754_FCC_MLOPS_MLProd_Projects_309_02/lib/python3.9/site-pack
+ages/zenml/zen_server/jwt.py", line 90, in decode_token
+    raise AuthorizationException(f"Invalid JWT token: {e}") from e
+zenml.exceptions.AuthorizationException: Invalid JWT token: Signature verification failed
+INFO:     127.0.0.1:55651 - "GET /api/v1/runs/529be755-e4ff-4443-80ec-304a34e0f30f HTTP/1.1" 
+401 Unauthorized
+INFO:     127.0.0.1:55650 - "GET /api/v1/workspaces HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55653 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55650 - "POST /api/v1/login HTTP/1.1" 200 OK
+[1;35mGot token from cookie[0m
+[1;35mGot token from cookie[0m
+[1;35mGot token from cookie[0m
+INFO:     127.0.0.1:55651 - "GET /api/v1/component-types HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55652 - "GET /api/v1/current-user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55653 - "GET /api/v1/workspaces HTTP/1.1" 200 OK
+[1;35mGot token from cookie[0m
+[1;35mGot token from cookie[0m
+INFO:     127.0.0.1:55653 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55652 - "GET /api/v1/workspaces HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55651 - "GET /api/v1/runs/529be755-e4ff-4443-80ec-304a34e0f30f HTTP/1.1" 
+200 OK
+[1;35mGot token from cookie[0m
+INFO:     127.0.0.1:55651 - "GET /api/v1/runs/529be755-e4ff-4443-80ec-304a34e0f30f/graph 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55651 - "GET /media/arrowClose.cbd53f3f.svg HTTP/1.1" 200 OK
+[1;35mGot token from cookie[0m
+INFO:     127.0.0.1:55652 - "GET 
+/api/v1/run-metadata?pipeline_run_id=529be755-e4ff-4443-80ec-304a34e0f30f&key=orchestrator_url 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57561 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57562 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57563 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57564 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57565 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57566 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET /api/v1/workspaces/default?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/stacks/aeff7473-997f-47a9-87fd-9d771f7543b6?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/components?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_works
+pace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&workspace_id=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&sta
+ck_id=cb7e0696-5d33-4d0e-bdf0-1f53e71d8851 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=orchestrator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=artifact_store HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=experiment_tracker HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=model_deployer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/code_repositories?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&sco
+pe_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/pipelines?hydrate=False&sort_by=desc%3Acreated&logical_operator=and&page=1&size=1&scope
+_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipeline&version_has
+h=57fddf5ecaae0fb49c633da336721504 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/pipelines?hydrate=False&sort_by=desc%3Acreated&logical_operator=and&page=1&size=1&scope
+_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipeline HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59102 - "GET /api/v1/current-user?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/pipelines HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/pipeline_deployments HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/api_token?pipeline_id=463feb86-ffcd-4cfc-baaf-716ceab84f29&expires_minutes=1440 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=576a80c4-d209-4b49-a08f-cc70443d5621 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Aingest_df%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/4c0018a1-63f5-4256-83a3-b1b6e76e37c6?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Aingest_df%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "PUT /api/v1/steps/4a811e03-9b5e-404a-a93e-cda9dc5d99a5 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=576a80c4-d209-4b49-a08f-cc70443d5621 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=X_trai
+n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/e0c2cd4d-b9da-4282-9a99-6c96411cc268?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=X_train&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=X_test
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/941d033c-ba80-42e7-b50f-0450ab5a0b95?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=X_test&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=y_trai
+n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/1ab8a2e3-82d4-465b-ba67-1ef671d09529?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=y_train&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=y_test
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/817344a0-1538-4ab1-b53c-6822337da68d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=y_test&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "PUT /api/v1/steps/158ad678-ee44-4747-89cb-c6c9d0169a6b HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=576a80c4-d209-4b49-a08f-cc70443d5621 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Atrain_model%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/432441b9-cb98-47e8-8233-e32c4ea0599b?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Atrain_model%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "PUT /api/v1/steps/152f0d9d-e34e-4dfc-b027-b257abab9e9c HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=576a80c4-d209-4b49-a08f-cc70443d5621 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=r2_sco
+re HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/fa922bde-7230-4e63-bc25-6105d91eab6d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=r2_score&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=rmse 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/84c8b283-bcc1-4524-ba8f-db4c2dbc2253?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=rmse&only_unused=False 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "PUT /api/v1/steps/2c466771-d232-403b-a9e4-6bd3ddfaff50 HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=576a80c4-d209-4b49-a08f-cc70443d5621 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Adeployment_trigger%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifacts/a094058a-17d3-4b68-b0fd-c3ade5ee2805?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Adeployment_trigger%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "PUT /api/v1/steps/9abf5467-8fae-44b7-8dbb-cfa74ac4c1cf HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59102 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/runs/get-or-create HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "GET 
+/api/v1/steps?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&scope_workspace
+=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&pipeline_run_id=576a80c4-d209-4b49-a08f-cc70443d5621 
+HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59102 - "POST /api/v1/steps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET /api/v1/workspaces/default?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/stacks/aeff7473-997f-47a9-87fd-9d771f7543b6?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d8851?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/components?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_works
+pace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&workspace_id=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&sta
+ck_id=cb7e0696-5d33-4d0e-bdf0-1f53e71d8851 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=orchestrator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=local&type=artifact_store HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=experiment_tracker HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET 
+/api/v1/flavors?hydrate=True&sort_by=created&logical_operator=and&page=1&size=20&scope_workspac
+e=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=mlflow&type=model_deployer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "GET 
+/api/v1/artifacts?hydrate=False&sort_by=created&logical_operator=and&page=1&size=20&name=contin
+uous_deployment_pipeline%3A%3Amlflow_model_deployer_step%3A%3Aoutput HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "GET 
+/api/v1/artifacts/014af239-21b5-4933-a5c7-bf39584cf134?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "GET 
+/api/v1/artifact_versions?hydrate=False&sort_by=desc%3Aversion_number&logical_operator=and&page
+=1&size=1&scope_workspace=fd2a5d49-22cc-4dc8-a986-fa27bc93b88d&name=continuous_deployment_pipel
+ine%3A%3Amlflow_model_deployer_step%3A%3Aoutput&only_unused=False HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "POST /api/v1/artifact_versions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "POST 
+/api/v1/workspaces/fd2a5d49-22cc-4dc8-a986-fa27bc93b88d/run-metadata HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "PUT /api/v1/steps/6c31fa6c-d77e-458a-8425-c8397234746d HTTP/1.1" 
+200 OK
+INFO:     127.0.0.1:59122 - "GET /api/v1/current-user?hydrate=True HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "GET /api/v1/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59330 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59331 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59332 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59333 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59334 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59335 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59342 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59343 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59344 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59345 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59346 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59347 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59349 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59350 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59351 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59352 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59353 - "HEAD /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59354 - "HEAD /health HTTP/1.1" 200 OK

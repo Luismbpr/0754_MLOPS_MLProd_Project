@@ -1,0 +1,18 @@
+                Stack Configuration                
+┏━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ COMPONENT_TYPE     │ COMPONENT_NAME             ┃
+┠────────────────────┼────────────────────────────┨
+┃ EXPERIMENT_TRACKER │ mlflow_tracker_customer_05 ┃
+┠────────────────────┼────────────────────────────┨
+┃ ORCHESTRATOR       │ default                    ┃
+┠────────────────────┼────────────────────────────┨
+┃ ARTIFACT_STORE     │ default                    ┃
+┠────────────────────┼────────────────────────────┨
+┃ MODEL_DEPLOYER     │ mlflow_customer_05         ┃
+┗━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+     'mlflow_stack_customer_05' stack (ACTIVE)     
+Stack 'mlflow_stack_customer_05' with id 'cb7e0696-5d33-4d0e-bdf0-1f53e71d8851' is
+owned by user default.
+Dashboard URL: 
+http://127.0.0.1:8237/workspaces/default/stacks/cb7e0696-5d33-4d0e-bdf0-1f53e71d88
+51/configuration

@@ -1,0 +1,72 @@
+{
+    "type": "zenml.integrations.mlflow.services.mlflow_deployment.MLFlowDeploymentService",
+    "uuid": "e4d46093-776c-4245-826e-93f52a537bcf",
+    "admin_state": "active",
+    "config": {
+        "type": "zenml.integrations.mlflow.services.mlflow_deployment.MLFlowDeploymentConfig",
+        "name": "",
+        "description": "",
+        "pipeline_name": "continuous_deployment_pipeline",
+        "pipeline_step_name": "mlflow_model_deployer_step",
+        "run_name": "continuous_deployment_pipeline-2024_03_15-04_50_00_818861",
+        "silent_daemon": false,
+        "root_runtime_path": "/Users/luis/Library/Application Support/zenml/local_stores/eabedc03-0de4-49c3-9a62-764e360eacd0",
+        "singleton": false,
+        "blocking": false,
+        "model_uri": "file:///Users/luis/Library/Application Support/zenml/local_stores/e63160d8-544f-417d-8350-b5becab076c0/mlruns/929352658283462711/d61e2d304bf84ca2bb79f8e00dbacd6f/artifacts/model",
+        "model_name": "model",
+        "registry_model_name": null,
+        "registry_model_version": null,
+        "registry_model_stage": null,
+        "workers": 3,
+        "mlserver": false,
+        "timeout": 60
+    },
+    "status": {
+        "type": "zenml.services.local.local_service.LocalDaemonServiceStatus",
+        "state": "pending_startup",
+        "last_state": "inactive",
+        "last_error": "service daemon is not running",
+        "runtime_path": "/Users/luis/Library/Application Support/zenml/local_stores/eabedc03-0de4-49c3-9a62-764e360eacd0/e4d46093-776c-4245-826e-93f52a537bcf",
+        "silent_daemon": false
+    },
+    "endpoint": {
+        "type": "zenml.integrations.mlflow.services.mlflow_deployment.MLFlowDeploymentEndpoint",
+        "admin_state": "inactive",
+        "config": {
+            "type": "zenml.integrations.mlflow.services.mlflow_deployment.MLFlowDeploymentEndpointConfig",
+            "name": "MLFlowDeploymentEndpoint",
+            "description": "",
+            "protocol": "http",
+            "port": null,
+            "ip_address": "127.0.0.1",
+            "allocate_port": true,
+            "prediction_url_path": "invocations"
+        },
+        "status": {
+            "type": "zenml.services.local.local_service_endpoint.LocalDaemonServiceEndpointStatus",
+            "state": "inactive",
+            "last_state": "inactive",
+            "last_error": "",
+            "protocol": "http",
+            "hostname": "127.0.0.1",
+            "port": 8000
+        },
+        "monitor": {
+            "type": "zenml.services.service_monitor.HTTPEndpointHealthMonitor",
+            "config": {
+                "type": "zenml.services.service_monitor.HTTPEndpointHealthMonitorConfig",
+                "healthcheck_uri_path": "ping",
+                "use_head_request": true,
+                "http_status_code": 200,
+                "http_timeout": 5
+            }
+        }
+    },
+    "service_type": {
+        "type": "model-serving",
+        "flavor": "mlflow",
+        "name": "mlflow-deployment",
+        "description": "MLflow prediction service"
+    }
+}

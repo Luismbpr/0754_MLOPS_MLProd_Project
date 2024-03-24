@@ -1,0 +1,13 @@
+Script to create a new
+stack
+experiment-tracker
+model-deployer
+
+
+Code that needs to be ran:
+
+```markdown
+zenml down
+zenml disconnect
+zenml up
+```
