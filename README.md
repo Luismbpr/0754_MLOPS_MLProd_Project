@@ -14,6 +14,15 @@
 <br>
 <br>
 
+
+```mermaid
+flowchart LR;
+    A[Data Input] --> B;
+    B[Data Preprocessing] --> C;
+    C[Model Training] --> D;
+    D[Model Deployment];
+```
+
 ## About
 Project to predict customer satisfaction given a set of inputs regarding customer's E-commerce data.
 
