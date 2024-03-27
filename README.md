@@ -27,21 +27,20 @@ Project development to predict the customer satisfaction given a series of input
 <br>
 
 ## Languages
-Languages
-    Python
+    - Python
 
 <br>
 
 ## Libraries Used
 Some of the libraries used are:
-    Docker
-    Numpy
-    Pandas
-    Scikit-Learn
-    ZenML
-    MlFlow
-    Streamlit
-    MermaidJS
+    - Docker
+    - Numpy
+    - Pandas
+    - Scikit-Learn
+    - ZenML
+    - MlFlow
+    - Streamlit
+    - MermaidJS
 
 <br>
 
@@ -92,6 +91,8 @@ The following process steps were thought out so that the old pipeline could be c
 ###### *Code based on [Free Code Camp](https://www.freecodecamp.org/). Special Thanks to Free Code Camp and instructor [Ayush Singh](https://github.com/ayush714)*
 
 ###### Dataset [Olist, and André Sionek. (2018). Brazilian E-Commerce Public Dataset by Olist [Data set]. Kaggle.](https://doi.org/10.34740/KAGGLE/DSV/195341)
+
+<br>
 
 ## Acknowledgements
 
