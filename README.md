@@ -7,17 +7,9 @@
 * [General Information](#general-information)
 * [Languages](#languages)
 * [Libraries Used](#libraries-used)
-* [](#)
-* [](#)
-* [](#)
+* [Dataset Information](#dataset-information)
+* [Resources](#resources)
 
-
-[About](#about)
-[General Information](#general-information)
-[Languages](#languages)
-[Libraries Used](#libraries-used)
-[Dataset Information](#dataset-information)
-[Resources](#resources)
 
 <br>
 <br>
@@ -40,7 +32,7 @@ Languages
 <br>
 
 ## Libraries Used
-These are some of the libraries used:
+Some of the libraries used are:
     Docker
     Numpy
     Pandas
@@ -67,13 +59,12 @@ This dataset contains customer information of a Brazilian E-commerce site by Oli
 
 
 ###### Diagram_001
-![ Diagram_001](README/0754_README_Images/Diagram_001_001.png)
+![ Diagram_001](/repository/README/0754_README_Images/Diagram_001_001.png?raw=true "Diagram_001_01")
 
 
 
 ###### Diagram_002
-# ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
+![ Diagram_001](/repository/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
 
 ###### Diagram_003
 
