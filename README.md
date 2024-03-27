@@ -84,6 +84,7 @@ ZenML was used to standardize the MLOPs processes along with MLFlow for tracking
 ![Diagram_003](README/0754_README_Images/Diagram_003_001_modif_001.png?raw=true "Diagram_001_001_modif_001")
 
 <br>
+
 ###### Diagram_004
 ![Diagram_004_003](/README/0754_README_Images/Diagram_004_003.png?raw=true "Diagram_004_003")
 
@@ -91,7 +92,6 @@ ZenML was used to standardize the MLOPs processes along with MLFlow for tracking
 
 <br>
 
-<br>
 
 ## Resources
 
