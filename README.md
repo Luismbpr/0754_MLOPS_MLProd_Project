@@ -8,6 +8,7 @@
 * [Languages](#languages)
 * [Libraries Used](#libraries-used)
 * [Dataset Information](#dataset-information)
+* [More Information](#more-information)
 * [Resources](#resources)
 
 
@@ -52,6 +53,11 @@ This dataset contains customer information of a Brazilian E-commerce site by Oli
 
 <br>
 
+## More Information
+
+The project started with the development of a Machine Learning model that could predict customer satisfaction.
+The following processes from  amd diagram_002 needed to be followed.
+
 ###### Diagram_001
 
 ```mermaid
@@ -62,14 +68,16 @@ flowchart LR;
     D[Model Deployment];
 ```
 
-<<<<<<< HEAD
-=======
-
 ###### Diagram_002
+Creating a pipeline that could do these processes locally was important to see that the principal steps of the pipeline were working correctly.
+
 ![ Diagram_001](/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
->>>>>>> 909da45b8962d07cc59652e0ae2f8ede271e6e8b
+
+The following process steps were thought out so that the old pipeline could be changed in order to work by deploying it on the cloud. On this case the model would be deployed on a Streamlit app.
+
 ###### Diagram_003
-![ Diagram_003](/README/0754_README_Images/Diagram_003_001.png?raw=true "Diagram_003_01")
+<!-- ![ Diagram_003](/README/0754_README_Images/Diagram_003_001.png?raw=true "Diagram_003_01") -->
+![Diagram_003](README/0754_README_Images/Diagram_003_001_modif_001.png?raw=true "Diagram_001_001_modif_001")
 
 
 ###### Diagram_004
