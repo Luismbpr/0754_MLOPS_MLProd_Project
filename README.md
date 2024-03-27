@@ -72,6 +72,8 @@ flowchart LR;
 ###### Diagram_002
 Creating a pipeline that could do these processes locally was important to see that the principal steps of the pipeline were working correctly.
 
+<br>
+
 ![ Diagram_001](/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
 
 <br>
@@ -79,6 +81,8 @@ Creating a pipeline that could do these processes locally was important to see t
 
 The following process steps were thought out so that the old pipeline could be changed in order to work by deploying it on the cloud. On this case the model would be deployed on a Streamlit app.
 ZenML was used to standardize the MLOPs processes along with MLFlow for tracking experiments.
+
+<br>
 
 ###### Diagram_003
 <!-- ![ Diagram_003](/README/0754_README_Images/Diagram_003_001.png?raw=true "Diagram_003_01") -->
