@@ -14,15 +14,6 @@
 <br>
 <br>
 
-
-```mermaid
-flowchart LR;
-    A[Data Input] --> B;
-    B[Data Preprocessing] --> C;
-    C[Model Training] --> D;
-    D[Model Deployment];
-```
-
 ## About
 Project to predict customer satisfaction given a set of inputs regarding customer's E-commerce data.
 
@@ -61,14 +52,7 @@ This dataset contains customer information of a Brazilian E-commerce site by Oli
 
 <br>
 
-
-# 
-# ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-# ![alt text](http://url/to/img.png)
-###### Diagram_002
-
 ###### Diagram_001
-<<<<<<< HEAD
 
 ```mermaid
 flowchart LR;
@@ -79,16 +63,8 @@ flowchart LR;
 ```
 
 
-
-=======
-![ Diagram_001](/README/0754_README_Images/Diagram_001_001.png?raw=true "Diagram_001_01")
-
-
-
 ###### Diagram_002
 ![ Diagram_001](/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
-
->>>>>>> ed9b77eb68a895ff1b65ffeecf3d8446fc1ed2f1
 ###### Diagram_003
 
 
