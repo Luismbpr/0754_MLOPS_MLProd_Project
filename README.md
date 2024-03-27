@@ -61,6 +61,7 @@ This dataset contains customer information of a Brazilian E-commerce site by Oli
 ![Diagram_001](/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
 
 ###### Diagram_001
+<<<<<<< HEAD
 
 ```mermaid
 flowchart LR;
@@ -72,6 +73,15 @@ flowchart LR;
 
 
 
+=======
+![ Diagram_001](/README/0754_README_Images/Diagram_001_001.png?raw=true "Diagram_001_01")
+
+
+
+###### Diagram_002
+![ Diagram_001](/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
+
+>>>>>>> ed9b77eb68a895ff1b65ffeecf3d8446fc1ed2f1
 ###### Diagram_003
 
 
