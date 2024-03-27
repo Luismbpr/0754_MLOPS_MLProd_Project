@@ -9,7 +9,7 @@
 * [Libraries Used](#libraries-used)
 * [Dataset Information](#dataset-information)
 * [More Information](#more-information)
-* [Notes_01](#notes01)
+* [Side Notes](#side-notes)
 * [Resources](#resources)
 
 
@@ -98,8 +98,9 @@ ZenML was used to standardize the MLOPs processes along with MLFlow for tracking
 
 <br>
 
-## Notes_01
+## Side Notes
 
+Several issues appeared. The creation of a bash script helped to semi-automate the creation process of ZenML's new stacks, experiment trackers and model deployers.
 
 
 <br>
