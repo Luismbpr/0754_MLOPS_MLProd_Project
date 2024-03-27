@@ -56,15 +56,21 @@ This dataset contains customer information of a Brazilian E-commerce site by Oli
 # 
 # ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 # ![alt text](http://url/to/img.png)
-
+![Diagram_001](/README/0754_README_Images/Diagram_001_001.png?raw=true "Diagram_001_01")
+###### Diagram_002
+![Diagram_001](/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
 
 ###### Diagram_001
-![ Diagram_001](/repository/README/0754_README_Images/Diagram_001_001.png?raw=true "Diagram_001_01")
+
+```mermaid
+flowchart LR;
+    A[Data Input] --> B;
+    B[Data Preprocessing] --> C;
+    C[Model Training] --> D;
+    D[Model Deployment];
+```
 
 
-
-###### Diagram_002
-![ Diagram_001](/repository/README/0754_README_Images/Diagram_002_001.png?raw=true "Diagram_002_01")
 
 ###### Diagram_003
 
