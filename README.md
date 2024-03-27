@@ -9,6 +9,7 @@
 * [Libraries Used](#libraries-used)
 * [Dataset Information](#dataset-information)
 * [More Information](#more-information)
+* [Notes_01](#notes01)
 * [Resources](#resources)
 
 
@@ -97,6 +98,13 @@ ZenML was used to standardize the MLOPs processes along with MLFlow for tracking
 
 <br>
 
+## Notes_01
+
+
+
+<br>
+
+<br>
 
 ## Resources
 
