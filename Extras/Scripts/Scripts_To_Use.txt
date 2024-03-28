@@ -4,7 +4,7 @@ experiment-tracker
 model-deployer
 
 
-Code that needs to be ran:
+Code that needs to run:
 
 ```markdown
 zenml down
